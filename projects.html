@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Nitin Bansal</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .projects-page {
+      padding: 60px 0;
+      min-height: 70vh;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 32px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+      margin-top: 40px;
+    }
+    .project-card {
+      background: var(--white);
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: all 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      border-color: var(--accent);
+    }
+    .project-card h3 {
+      color: var(--primary);
+      margin-bottom: 12px;
+      font-size: 1.4rem;
+    }
+    .project-card .meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+    }
+    .project-card p {
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    .result {
+      background: var(--light-bg);
+      padding: 12px;
+      border-radius: 6px;
+      margin: 16px 0;
+      border-left: 4px solid var(--accent);
+    }
+    .result strong {
+      color: var(--primary);
+    }
+    .project-links {
+      margin-top: 20px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .project-links a {
+      background: var(--accent);
+      color: var(--white);
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+    .project-links a:hover {
+      background: var(--primary);
+    }
+    .project-links a.secondary {
+      background: transparent;
+      color: var(--accent);
+      border: 2px solid var(--accent);
+    }
+    .project-links a.secondary:hover {
+      background: var(--accent);
+      color: var(--white);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="name">Nitin Bansal — Projects</h1>
+      <p class="tagline">A showcase of my technical work across ML, Web Development, and Automation</p>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <div class="container">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#education">Education</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#achievements">Achievements</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main class="projects-page">
+    <div class="container">
+      
+      
+      <h2 style="font-size: 2.5rem; color: var(--primary); margin-bottom: 16px;">My Projects</h2>
+      <p style="color: var(--muted); font-size: 1.1rem; margin-bottom: 40px;">
+        Below is a comprehensive list of my projects spanning Machine Learning, Full-Stack Development, and Automation. 
+        Click on each project to learn more about the technical details and results.
+      </p>
+
+      <div class="projects-grid">
+        <!-- Project 1: FinGuard AI (Website) -->
+        <article class="project-card">
+          <h3>FinGuard AI – Adani FinTell Suite</h3>
+          <p class="meta">AI/ML • OCR • FastAPI • React | Feb 2025</p>
+          <p>Runner-up at Finnovate Hack 2025. Developed an AI-powered expense anomaly detection and compliance monitoring system for enterprise invoice processing with real-time fraud detection.</p>
+          <div class="result">
+            <strong>Result:</strong> Achieved 80%+ OCR accuracy, real-time GST compliance validation, automated duplicate detection, and intelligent dashboards with NLP query capabilities.
+          </div>
+          <p><strong>Achievement:</strong> Runner-Up at Finnovate Hack 2025 (IITGN × Adani Enterprises)</p>
+          <div class="project-links">
+            <a href="projects/finguard-ai.html">Learn More</a>
+            <a href="https://adani-fintell-suite.netlify.app/" target="_blank" class="secondary">Live Dashboard</a>
+          </div>
+        </article>
+
+        <!-- Project 2: Research Park Website -->
+        <article class="project-card">
+          <h3>IIT GN Research Park Website</h3>
+          <p class="meta">Full-Stack • HTML/CSS/JS • FastAPI | Aug 2024 - Sep 2024</p>
+          <p>Developed a full-stack website for IIT Gandhinagar Research Park with dynamic features including contact forms, News & Events page with real-time updates, and user-friendly interface.</p>
+          <div class="result">
+            <strong>Impact:</strong> Live website serving as the primary information hub for the IIT GN Research Park community.
+          </div>
+          <div class="project-links">
+            <a href="projects/iitgn-research-park.html">Learn More</a>
+            <a href="https://iitgnrp-website.netlify.app/" target="_blank" class="secondary">Live Website</a>
+            <a href="https://github.com/NitinBansa8955/iitgnrp-website" target="_blank" class="secondary">GitHub Repo</a>
+          </div>
+        </article>
+
+        <!-- Project 3: Chess Club Website -->
+        <article class="project-card">
+          <h3>IIT GN Chess Club Website</h3>
+          <p class="meta">Full-Stack • HTML/CSS/JS • Database | Aug 2024 - Oct 2024</p>
+          <p>Developed a full-stack website with a user-friendly interface for the IIT GN Chess Club, enabling member management and community engagement.</p>
+          <div class="result">
+            <strong>Features:</strong> User registration system, real-time announcements page, event management, and member dashboard.
+          </div>
+          <div class="project-links">
+            <a href="projects/chess-club.html">Learn More</a>
+            <a href="https://drive.google.com/drive/folders/1gJgRyyAV_vivJwXUCu9KQPVLsOg7gSvD?usp=sharing" target="_blank" class="secondary">Interface Preview</a>
+            <a href="https://github.com/NitinBansa8955/Chess-Web_IITGN_updated" target="_blank" class="secondary">GitHub Repo</a>
+          </div>
+        </article>
+
+        <!-- Project 4: 3D Bioprinting (ML) -->
+        <article class="project-card">
+          <h3>3D-Bioprinting Parameters Optimization</h3>
+          <p class="meta">Machine Learning • MATLAB • Random Forest | Jan 2025 - Apr 2025</p>
+          <p>Developed a real-time predictive ML model to recommend optimal printing temperature and pressure based on CAD design complexity and bioink properties (Nivea Cream).</p>
+          <div class="result">
+            <strong>Result:</strong> Achieved ~80% similarity between ML-predicted settings and actual print quality across multiple design complexities through lab validation.
+          </div>
+          <p><strong>Advisor:</strong> Prof. Prachi Thareja, IIT Gandhinagar</p>
+          <div class="project-links">
+            <a href="projects/3d-bioprinting.html">Learn More</a>
+            <a href="https://iitgnacin-my.sharepoint.com/:f:/g/personal/prachi_iitgn_ac_in/EkJPMkRjuAJKrAS0pQuIPkABoEY8pttNE1zYtv-2TlF0zw?e=I1tCxY" target="_blank" class="secondary">Project Files</a>
+          </div>
+        </article>
+
+        <!-- Project 5: Image Augmentation (ML) -->
+        <article class="project-card">
+          <h3>Multi-Stage Image Augmentation Impact Analysis</h3>
+          <p class="meta">Deep Learning • PyTorch • ResNet-50 | Mar 2025</p>
+          <p>Implemented a custom Augly pipeline with 10+ image transforms to triple the training dataset and fine-tuned ResNet-50 for image classification.</p>
+          <div class="result">
+            <strong>Result:</strong> Model accuracy improved from 85.71% to 96.43% after multi-stage augmentation and fine-tuning.
+          </div>
+          <p><strong>Advisor:</strong> Prof. Mayank Singh, IIT Gandhinagar</p>
+          <div class="project-links">
+            <a href="projects/augmentation-impact.html">Learn More</a>
+            <a href="https://github.com/NitinBansa8955/STT-Assignment-5" target="_blank" class="secondary">GitHub Repo</a>
+          </div>
+        </article>
+
+        <!-- Project 6: CI/CD Pipeline (ML) -->
+        <article class="project-card">
+          <h3>CI/CD Pipeline for Breast-Cancer Classification</h3>
+          <p class="meta">MLOps • MLRun • Docker • Kubernetes | Feb 2025</p>
+          <p>Built an automated MLRun pipeline for breast-cancer classification with data ingestion, hyperparameter tuning, model training, and deployment workflows.</p>
+          <div class="result">
+            <strong>Result:</strong> Random Forest model achieved 96.49% test accuracy with strong precision on the sklearn breast-cancer dataset.
+          </div>
+          <p><strong>Advisor:</strong> Prof. Mayank Singh, IIT Gandhinagar</p>
+          <div class="project-links">
+            <a href="projects/ci-cd-breast-cancer.html">Learn More</a>
+            <a href="https://github.com/NitinBansa8955/STT-Assignment-9" target="_blank" class="secondary">GitHub Repo</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="quote">"The best way to predict the future is to create it."</p>
+      <small>&copy; 2025 Nitin Bansal</small>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

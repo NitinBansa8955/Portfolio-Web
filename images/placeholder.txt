@@ -1,0 +1,18 @@
+IMPORTANT: Add your profile picture here!
+
+Replace this file with your actual profile photo named "profile.jpg"
+
+Requirements:
+- Square image (e.g., 500x500px or 1000x1000px)
+- Good quality headshot
+- Professional appearance
+- Format: JPG or PNG
+
+The image will be displayed in the header as a circular profile picture (200x200px on desktop, 150x150px on mobile).
+
+If you don't have a profile photo yet, you can:
+1. Use a placeholder service like https://ui-avatars.com/
+2. Take a professional headshot
+3. Use your existing LinkedIn/GitHub profile picture
+
+Once you have your image, save it as "profile.jpg" in this images/ folder.

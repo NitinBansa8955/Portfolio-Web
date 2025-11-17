@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>3D-Bioprinting Parameters Optimization — Nitin Bansal</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .main-nav {
+      background: var(--white);
+      border-bottom: 2px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .main-nav .container {
+      display: flex;
+      gap: 24px;
+      padding: 16px 24px;
+      flex-wrap: wrap;
+    }
+    .main-nav a {
+      color: var(--secondary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .main-nav a:hover {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <nav class="main-nav">
+    <div class="container">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#education">Education</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../index.html#skills">Skills</a>
+      <a href="../index.html#achievements">Achievements</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </nav>
+  <div class="container">
+    <a href="/index.html">← Back</a>
+    <h1>3D-Bioprinting Parameters Optimization</h1>
+    <p><strong>Advisor:</strong> Prof. Prachi Thareja, IIT Gandhinagar</p>
+    <h3>Overview</h3>
+    <p>Developed a real-time predictive ML model (Random Forest) that recommends optimal printing temperature and pressure based on CAD design complexity and bioink (Nivea Cream).</p>
+
+    <h3>Technical Highlights</h3>
+    <ul>
+      <li>Feature extraction from CAD: Implemented a Bresenham Intersection Complexity algorithm (MATLAB) to quantify geometric complexity from CAD files.</li>
+      <li>Modeling: Random Forest trained on experimental data with features from CAD and material properties.</li>
+      <li>Validation: Multiple hands-on trials in the lab comparing predicted settings to actual print quality.</li>
+    </ul>
+
+    <h3>Results</h3>
+    <p>The ML-predicted temperature and pressure settings achieved ~80% similarity with actual print quality across multiple design complexities.</p>
+
+    <h3>Files / Code</h3>
+    <p><a href="https://iitgnacin-my.sharepoint.com/:f:/g/personal/prachi_iitgn_ac_in/EkJPMkRjuAJKrAS0pQuIPkABoEY8pttNE1zYtv-2TlF0zw?e=I1tCxY" target="_blank" style="color: var(--accent); font-weight: 500;">🔗 Project Files (SharePoint)</a></p>
+  </div>
+</body>
+</html>

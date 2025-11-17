@@ -1,0 +1,381 @@
+/* Modern Academic Portfolio Styles */
+:root {
+  --primary: #2c3e50;
+  --accent: #3498db;
+  --text: #333;
+  --muted: #7f8c8d;
+  --light-bg: #f8f9fa;
+  --border: #e1e8ed;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--white);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header */
+.site-header {
+  background: var(--primary);
+  color: var(--white);
+  padding: 48px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-text {
+  flex: 1;
+}
+
+.name {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 16px;
+}
+
+.contact-links a {
+  color: var(--white);
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 0.95rem;
+  padding: 8px 16px;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 4px;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.contact-links a:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: var(--white);
+}
+
+.header-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--white);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Navigation */
+.main-nav {
+  background: var(--white);
+  border-bottom: 2px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.main-nav .container {
+  display: flex;
+  gap: 32px;
+  padding: 16px 24px;
+}
+
+.main-nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.main-nav a:hover {
+  color: var(--accent);
+}
+
+.main-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s;
+}
+
+.main-nav a:hover::after {
+  width: 100%;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: var(--white);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Sections */
+.section {
+  padding: 60px 0;
+}
+
+.section-alt {
+  background: var(--light-bg);
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 24px;
+  border-bottom: 3px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.section ul li {
+  padding: 12px 0;
+  padding-left: 28px;
+  position: relative;
+}
+
+.section ul li::before {
+  content: '•';
+  color: var(--accent);
+  font-weight: bold;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+}
+
+/* About */
+.about-content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* News Carousel */
+.news-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.news-content {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  min-height: 80px;
+  padding: 20px;
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.news-item {
+  display: none;
+  line-height: 1.8;
+}
+
+.news-item.active {
+  display: block;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.carousel-btn {
+  background: var(--accent);
+  color: var(--white);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.carousel-btn:hover {
+  background: var(--primary);
+  transform: scale(1.1);
+}
+
+/* Education Table */
+.education-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+  background: var(--white);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.education-table th,
+.education-table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.education-table th {
+  background: var(--primary);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.education-table tbody tr:hover {
+  background: var(--light-bg);
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.skill-category {
+  background: var(--white);
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-left: 4px solid var(--accent);
+}
+
+.skill-category h3 {
+  color: var(--primary);
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.skill-category p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Footer */
+.site-footer {
+  background: var(--primary);
+  color: var(--white);
+  padding: 40px 0 24px;
+  text-align: center;
+}
+
+.quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 16px;
+  opacity: 0.9;
+}
+
+.footer-links {
+  margin: 16px 0;
+}
+
+.footer-links a {
+  color: var(--white);
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.site-footer small {
+  display: block;
+  margin-top: 16px;
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+/* Social Links */
+.social-links {
+  margin-top: 16px;
+}
+
+.social-links a {
+  color: var(--accent);
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .header-image img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .name {
+    font-size: 2rem;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .main-nav .container {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

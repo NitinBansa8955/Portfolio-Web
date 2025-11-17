@@ -1,0 +1,22 @@
+PROFILE IMAGE SETUP
+==================
+
+Your portfolio is looking for: images/profile.jpg
+
+OPTION 1: Use Your Own Photo
+-----------------------------
+1. Take a professional headshot (square format preferred)
+2. Save it as 'profile.jpg' in this images/ folder
+3. Recommended size: 500x500px or larger (will be auto-resized)
+
+OPTION 2: Generate a Placeholder
+---------------------------------
+Use an online avatar generator:
+- https://ui-avatars.com/api/?name=Nitin+Bansal&size=500&background=2c3e50&color=fff&bold=true
+- Right-click the generated image ? Save as 'profile.jpg' in this folder
+
+OPTION 3: Use LinkedIn/GitHub Photo
+------------------------------------
+Download your profile picture from LinkedIn or GitHub and save as 'profile.jpg'
+
+Until you add a real photo, the page will show a broken image icon.
